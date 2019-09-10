@@ -7,11 +7,11 @@ function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
 const [homeScore, setHomeScore] = useState(0);
 const [awayScore, setAwayScore] = useState(0);
+const count= useState("20:00");
 
 const teams = {
   "homeName": "Lions",
   "awayName": "Tigers",
-  "time": "0:03"
 }
   return (
     <div className="container">
@@ -24,7 +24,7 @@ const teams = {
 
             <div className="home__score">{homeScore}</div>
           </div>
-          <div className="timer">{teams.time}</div>
+          <div className="timer">{count}</div>
           <div className="away">
             <h2 className="away__name">{teams.awayName}</h2>
             <div className="away__score">{awayScore}</div>
